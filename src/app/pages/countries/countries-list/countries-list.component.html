@@ -1,0 +1,26 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">countries List Page</h4>
+    <div class="card-body">
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <div>sort by:
+        <button (click)="byName()"> name</button>
+        <button (click)="byPopulation()"> population</button>
+        </div>
+        <div class="search_box">
+        <input type="text"
+               (change)="search($event)" placeholder="Find"/>
+        </div>
+      <ul class="countries">
+        <li *ngFor="let country of countries let i = index "
+            [class.selected]="country.alpha3Code === selectedId">
+          <a [routerLink]="['/country', country.alpha3Code]" [queryParams]="{lat: country.latlng[0], long:country.latlng[1]}">
+            name: {{ country.name}}
+              <div>population: {{country.population}}</div>
+              <img src="{{country.flag}}" class="flagsBox"/>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+</div>

@@ -1,0 +1,53 @@
+.countries {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-header{
+  background-color:  #ff920a ;
+}
+.flagsBox {
+  height:50%;
+  width: 50%;
+  border: 1px solid black;
+}
+.countries li {
+  position: relative;
+  cursor: pointer;
+  margin: .5em;
+  padding-top: .3em;
+  border-radius: 4px;
+  flex: 1 0 21%;
+}
+
+.countries li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.search_box {
+  padding-top: 10px;
+}
+.countries a {
+  color:  #888;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.countries a:hover {
+  color:#607D8B;
+}
+
+
+.countries li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}
+.countries li.selected:hover {
+  background-color: #BBD8DC;
+}

@@ -1,0 +1,41 @@
+﻿<div class="card mt-4">
+    <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+    <h4 *ngIf="country && country.flag" class="card-header">{{country.name}}</h4>
+    <div class="card-body">
+        <div class="body">
+            <img src="{{country.flag}}" class="flagsBox"/>
+            <div style="height: 200px; width:300px"
+                 leaflet
+                [leafletOptions]="options"
+                [leafletLayers]="layers">
+            </div>
+        </div>
+        <div class="border displayFlex">
+             languages:
+                <div *ngFor="let language of country.languages" style="margin-right: 5px;">
+                     {{language.name}}
+                </div>
+        </div>
+        <div class=" border displayFlex">
+            Timezone:
+            <div *ngFor="let timezone of country.timezones"  style="margin-right: 5px;">
+                {{timezone}}
+            </div>
+        </div>
+        <div class="border  displayFlex">
+            Bordering countries:
+            <div *ngFor="let border of country.borders"  style="margin-right: 5px;">
+                <a [routerLink]="['/country',  border]" target="_blank">
+                    {{border}}
+                </a>
+            </div>
+        </div>
+        <div class="border  displayFlex">
+             currencies:
+            <div *ngFor="let currency of country.currencies"  style="margin-right: 5px;">
+               {{currency.name}}
+            </div>
+        </div>
+      <button class="btn btn-primary" (click)="getBack()">Back</button>
+    </div>
+</div>
