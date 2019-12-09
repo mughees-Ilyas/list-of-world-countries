@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { CountriesListComponent } from './countries-list';
-import {CountryDetailComponent} from '@app/pages/countries/user-detail/country-detail.component';
+import {CountryDetailComponent} from '@app/pages/countries/country-detail/country-detail.component';
 
 const heroesRoutes: Routes = [
   { path: 'countries', component: CountriesListComponent},

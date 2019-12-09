@@ -6,7 +6,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 
 
-import {CountryDetailComponent} from '@app/pages/countries/user-detail/country-detail.component';
+import {CountryDetailComponent} from '@app/pages/countries/country-detail/country-detail.component';
 import { CountriesListComponent } from './countries-list';
 import { CountriesRoutingModule } from './countries-routing.module';
 
