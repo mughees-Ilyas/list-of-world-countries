@@ -9,7 +9,7 @@ steps to run the project.
 ## routes
 we have   
 
-/countries for countries list view
+/countries for countries list view.
 
 /country/:id to view specific country.
 
