@@ -21,4 +21,4 @@ Search works with enter key.
 
 The map works but the boundies are not well defined on it. was not able to mark the boundry by country but was able to put a circle on its latitute and longitude. also when clicked on the bordering coutires the map doesnt work as we dont have the lat long to pass to component.
 
-search bar could have worked without the enter key and just on key press but the constant searching would means having a debounce function in place as well so went with pressing enter to search method.
+Search bar could have worked without the enter key and just on key press but the constant searching would means having a debounce function in place as well so went with pressing enter to search method.
