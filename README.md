@@ -7,7 +7,7 @@ steps to run the project.
 
 
 ## routes
-we have   
+we have,
 
 /countries for countries list view.
 
